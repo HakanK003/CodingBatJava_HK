@@ -1,8 +1,11 @@
 package warmup1_Solutions;
 
-public class sumDouble {
+public class SumDouble {
+
     public int sumDouble(int a, int b) {
+
         return (a!=b)? (a+b) : (a+b)*2;
+
     }
 
 }

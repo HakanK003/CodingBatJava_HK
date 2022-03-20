@@ -1,10 +1,13 @@
 package warmup1_Solutions;
 
-public class parrotTrouble {
+public class ParrotTrouble {
+
     public boolean parrotTrouble(boolean talking, int hour) {
 
         return (!(hour>=7&&hour<=20)&&talking);
+
     }
+
 }
 
 /*
