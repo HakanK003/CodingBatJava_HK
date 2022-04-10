@@ -4,27 +4,27 @@ public class OneTwo {
 
     public String oneTwo(String str) {
 
-
-        if(str.length()<3) {return str;}
+        if(str.length()<3) {return "";}
 
         String result ="";
 
         char[] letters = str.toCharArray();
 
-        char ch = ' ';
+        for (int i = 0; i < letters.length-2; i++) {
 
-        for (int i = 0; i < str.length(); i++) {
+            if (i % 3 == 0){
 
-            if (i%3==2||i==0){
-                if (i!=0){ch=letters[i-3]; result+=ch;}
-                continue;
+                char temp1 = letters[i+1];
+                char temp2 = letters[i+2];
+                letters[i+2]=letters[i];
+                letters[i] = temp1;
+                letters[i+1] = temp2;
+
+                result+=""+letters[i]+letters[i+1]+letters[i+2];
             }
-
-            result+=letters[i];
 
         }
 
-        result+=ch;
 
         return result;
 

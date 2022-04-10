@@ -6,18 +6,16 @@ public class XyzMiddle {
 
         if (str.length()>=5){
 
-            for (int i = 0; i < str.length()/2; i++) {
-                
-            }
-            
-          
+            int i = (str.length()-3)/2, j=str.length()-(str.length()-3)/2;;
 
-            }
+            if (str.substring(i, j).contains("xyz")){return true;}
 
-        
+        }else{
+
+            if (str.contains("xyz")){return true;}
+        }
 
         return false;
-
     }
     
 //    public boolean xyzMiddle(String str) {
