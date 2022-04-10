@@ -3,13 +3,7 @@ package string2_Solutions;
 public class PlusOut {
 
 
-    public static void main(String[] args) {
-
-        System.out.println(plusOut("abXYabcXYZ", "XY"));
-
-    }
-
-    public static String plusOut(String str, String word) {
+    public String plusOut(String str, String word) {
 
         for (int i = 0; i < str.length() - word.length();) {
 
